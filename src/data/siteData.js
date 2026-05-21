@@ -1,140 +1,176 @@
 import {
-  Aperture,
+  BadgeCheck,
+  BriefcaseBusiness,
   Building2,
-  CalendarDays,
-  Clapperboard,
-  Film,
+  Cake,
+  CalendarHeart,
+  Clock3,
+  HeartHandshake,
   Instagram,
+  MapPin,
   MessageCircle,
-  Mountain,
-  Plane,
-  Share2,
-  Sparkles
+  Palette,
+  PenLine,
+  Sparkles,
+  Star,
+  UsersRound,
+  WandSparkles
 } from "lucide-react";
 
 export const contact = {
   phoneLabel: "+55 11 99999-9999",
   whatsappUrl: "https://wa.me/5511999999999",
-  instagramLabel: "@dronefilms",
+  instagramLabel: "@caricaturaaovivo",
   instagramUrl: "https://instagram.com/",
-  email: "contato@dronefilms.com"
+  email: "contato@caricaturaaovivo.com",
+  location: "Sao Paulo, Brasil"
 };
 
 export const navItems = [
-  { label: "Projetos", href: "#projects" },
-  { label: "Servicos", href: "#services" },
+  { label: "Trabalhos", href: "#gallery" },
+  { label: "Duas maos", href: "#two-hands" },
+  { label: "Eventos", href: "#events" },
   { label: "Sobre", href: "#about" },
   { label: "Contato", href: "#contact" }
 ];
 
-export const heroVideo =
-  "https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4";
+export const stats = [
+  { label: "ao vivo", value: "8 min" },
+  { label: "eventos", value: "300+" },
+  { label: "estilo", value: "autor" }
+];
 
-export const heroPoster =
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=85";
+export const galleryCategories = [
+  "Todos",
+  "Caricaturas de rua",
+  "Caricaturas estilizadas",
+  "Eventos",
+  "Desenhos rapidos"
+];
 
-export const projects = [
+export const gallery = [
   {
-    title: "Golden Residence",
-    category: "Real Estate",
-    description: "Arquitetura, luz natural e movimentos aereos para vender sensacao de espaco.",
+    title: "Sorriso de Avenida",
+    category: "Caricaturas de rua",
     image:
-      "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1400&q=82"
+      "https://images.unsplash.com/photo-1529504472001-358df1e0c596?auto=format&fit=crop&w=1200&q=82"
   },
   {
-    title: "Serra em Movimento",
-    category: "Natureza",
-    description: "Planos amplos, textura de montanha e ritmo contemplativo para narrativas visuais.",
+    title: "Personagem de Gala",
+    category: "Caricaturas estilizadas",
     image:
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=82"
+      "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=82"
   },
   {
-    title: "Costa Viva",
-    category: "Turismo",
-    description: "Imagens imersivas para destinos, pousadas e experiencias de viagem memoraveis.",
-    image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=82"
-  },
-  {
-    title: "Celebration Film",
+    title: "Noite Corporativa",
     category: "Eventos",
-    description: "Cobertura elegante com energia, escala e cortes pensados para emocionar.",
     image:
-      "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1400&q=82"
+      "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=82"
   },
   {
-    title: "Vertical Stories",
-    category: "Social Media",
-    description: "Conteudos curtos, dinamicos e prontos para Reels, TikTok e campanhas pagas.",
+    title: "Sketch em Movimento",
+    category: "Desenhos rapidos",
     image:
-      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1400&q=82"
+      "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=82"
+  },
+  {
+    title: "Olhar Disney Urbano",
+    category: "Caricaturas estilizadas",
+    image:
+      "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=1200&q=82"
+  },
+  {
+    title: "Fila Feliz",
+    category: "Caricaturas de rua",
+    image:
+      "https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&q=82"
   }
 ];
 
-export const services = [
+export const aboutPoints = [
   {
-    title: "Drone Filming",
-    text: "Captacao aerea em 4K com movimentos suaves, composicao premium e direcao visual.",
-    icon: Plane
+    title: "Caricaturas feitas na hora",
+    text: "Traços rapidos, expressivos e personalizados para cada rosto.",
+    icon: Clock3
   },
   {
-    title: "Video Editing",
-    text: "Montagem, cor, ritmo e finalizacao para transformar imagens em uma peca cinematografica.",
-    icon: Film
+    title: "Experiencia artistica unica",
+    text: "O publico acompanha o desenho nascer ao vivo, com humor e presenca.",
+    icon: Sparkles
   },
   {
-    title: "Real Estate Videos",
-    text: "Videos para vender imoveis com escala, contexto, fachada, entorno e detalhes internos.",
+    title: "Desenhos com duas maos",
+    text: "Performance rara que transforma o processo em parte do espetaculo.",
+    icon: PenLine
+  },
+  {
+    title: "Estilo moderno estilizado",
+    text: "Energia urbana, sketchbook e acabamento premium em cada composicao.",
+    icon: Palette
+  }
+];
+
+export const twoHandsSteps = [
+  "Duas linhas nascem ao mesmo tempo",
+  "Expressao, humor e proporcao em sincronia",
+  "Finalizacao rapida diante do publico"
+];
+
+export const events = [
+  {
+    title: "Casamentos",
+    text: "Lembrancas afetivas para convidados, padrinhos e familia.",
+    icon: CalendarHeart
+  },
+  {
+    title: "Aniversarios",
+    text: "Entretenimento ao vivo com entrega fisica ou digital.",
+    icon: Cake
+  },
+  {
+    title: "Empresas",
+    text: "Ativacoes de marca, confraternizacoes e brindes personalizados.",
     icon: Building2
   },
   {
-    title: "Tourism Videos",
-    text: "Narrativas visuais para hoteis, destinos, experiencias e marcas ligadas a viagem.",
-    icon: Mountain
+    title: "Feiras",
+    text: "Performance que atrai publico e cria movimento no estande.",
+    icon: UsersRound
   },
   {
-    title: "Event Coverage",
-    text: "Cobertura de eventos com planos aereos seguros, elegantes e integrados a filmagem terrestre.",
-    icon: CalendarDays
-  },
-  {
-    title: "Social Media Content",
-    text: "Pacotes otimizados para redes sociais, com cortes verticais, hooks visuais e entrega agil.",
-    icon: Share2
+    title: "Eventos corporativos",
+    text: "Experiencia premium para equipes, clientes e convidados VIP.",
+    icon: BriefcaseBusiness
   }
 ];
 
 export const testimonials = [
   {
     quote:
-      "O video mudou completamente a percepcao do imovel. Ficou sofisticado, leve e muito mais facil de apresentar.",
+      "A fila virou parte da atracao. Todo mundo queria ver o desenho acontecendo e sair com a propria caricatura.",
     name: "Marina Duarte",
-    role: "Consultora imobiliaria"
+    role: "Produtora de eventos"
   },
   {
     quote:
-      "A entrega teve olhar de cinema. As imagens aereas capturaram o destino de um jeito que foto comum nao consegue.",
+      "Elegante, pontual e muito carismatico. As caricaturas ficaram com personalidade sem perder o carinho com os convidados.",
     name: "Rafael Nunes",
-    role: "Operador de turismo"
+    role: "Noivo"
   },
   {
     quote:
-      "Profissionalismo do briefing a edicao final. Recebemos conteudos prontos para campanha, stories e apresentacao.",
+      "A performance com duas maos prendeu a feira inteira por alguns minutos. Foi exatamente o impacto que queriamos.",
     name: "Bianca Torres",
-    role: "Diretora criativa"
+    role: "Marketing corporativo"
   }
 ];
 
-export const stats = [
-  { label: "Resolucao", value: "4K" },
-  { label: "Drone", value: "FIMI X8 SE" },
-  { label: "Formato", value: "Web + Social" }
-];
-
 export const socialLinks = [
-  { label: "WhatsApp", href: contact.whatsappUrl, icon: MessageCircle },
   { label: "Instagram", href: contact.instagramUrl, icon: Instagram },
-  { label: "Portfolio", href: "#projects", icon: Aperture },
-  { label: "Studio", href: "#about", icon: Sparkles },
-  { label: "Filmes", href: "#projects", icon: Clapperboard }
+  { label: "WhatsApp", href: contact.whatsappUrl, icon: MessageCircle },
+  { label: "Localizacao", href: "#contact", icon: MapPin },
+  { label: "Trabalhos", href: "#gallery", icon: WandSparkles },
+  { label: "Depoimentos", href: "#testimonials", icon: Star },
+  { label: "Sobre", href: "#about", icon: BadgeCheck },
+  { label: "Contato", href: "#contact", icon: HeartHandshake }
 ];

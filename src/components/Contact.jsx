@@ -1,4 +1,4 @@
-import { Instagram, Mail, MessageCircle, Send } from "lucide-react";
+import { Instagram, Mail, MapPin, MessageCircle, Send } from "lucide-react";
 import { motion } from "framer-motion";
 import { contact } from "../data/siteData.js";
 import SectionHeading from "./SectionHeading.jsx";
@@ -9,8 +9,9 @@ export default function Contact() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_25%,rgba(200,169,106,0.14),transparent_32%)]" />
       <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
         <div>
-          <SectionHeading eyebrow="Contact" title="Let's plan the next flight.">
-            Conte sobre seu projeto e receba uma proposta para captacao, edicao e entrega final.
+          <SectionHeading eyebrow="Contato" title="Vamos desenhar uma experiencia para o seu evento.">
+            Conte data, cidade, tipo de evento e quantidade estimada de convidados para receber uma
+            proposta personalizada.
           </SectionHeading>
 
           <div className="mt-10 space-y-3">
@@ -26,6 +27,10 @@ export default function Contact() {
               <Mail size={20} />
               <span>{contact.email}</span>
             </a>
+            <div className="contact-link">
+              <MapPin size={20} />
+              <span>{contact.location}</span>
+            </div>
           </div>
         </div>
 
@@ -37,10 +42,10 @@ export default function Contact() {
           action={`mailto:${contact.email}`}
           method="post"
           encType="text/plain"
-          className="rounded-[1.75rem] border border-white/10 bg-white/[0.055] p-5 shadow-glow backdrop-blur-xl md:p-8"
+          className="rounded-lg border border-white/10 bg-white/[0.055] p-5 shadow-glow backdrop-blur-xl md:p-8"
         >
           <div className="grid gap-5 md:grid-cols-2">
-            <Field label="Name" name="name" autoComplete="name" placeholder="Seu nome" />
+            <Field label="Nome" name="name" autoComplete="name" placeholder="Seu nome" />
             <Field
               label="WhatsApp"
               name="whatsapp"
@@ -50,25 +55,24 @@ export default function Contact() {
             />
           </div>
           <label className="mt-5 block">
-            <span className="form-label">Project Type</span>
+            <span className="form-label">Tipo de evento</span>
             <select name="projectType" required className="form-field">
               <option value="">Selecione uma opcao</option>
-              <option>Drone Filming</option>
-              <option>Video Editing</option>
-              <option>Real Estate Videos</option>
-              <option>Tourism Videos</option>
-              <option>Event Coverage</option>
-              <option>Social Media Content</option>
+              <option>Casamento</option>
+              <option>Aniversario</option>
+              <option>Evento corporativo</option>
+              <option>Feira</option>
+              <option>Caricatura personalizada</option>
             </select>
           </label>
           <label className="mt-5 block">
-            <span className="form-label">Message</span>
+            <span className="form-label">Mensagem</span>
             <textarea
               name="message"
               required
               rows="6"
               className="form-field resize-none"
-              placeholder="Fale sobre local, objetivo, prazo e estilo desejado."
+              placeholder="Fale sobre data, local, quantidade de convidados e estilo desejado."
             />
           </label>
           <button

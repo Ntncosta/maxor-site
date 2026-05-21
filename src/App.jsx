@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation.jsx";
 import Projects from "./components/Projects.jsx";
 import Services from "./components/Services.jsx";
 import Testimonials from "./components/Testimonials.jsx";
+import TwoHands from "./components/TwoHands.jsx";
 import WhatsAppButton from "./components/WhatsAppButton.jsx";
 
 export default function App() {
@@ -14,9 +15,10 @@ export default function App() {
       <Navigation />
       <main>
         <Hero />
-        <Projects />
-        <Services />
         <About />
+        <Projects />
+        <TwoHands />
+        <Services />
         <Testimonials />
         <Contact />
       </main>

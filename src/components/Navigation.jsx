@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { Menu, PenTool, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { contact, navItems } from "../data/siteData.js";
@@ -30,11 +30,11 @@ export default function Navigation() {
         aria-label="Navegacao principal"
       >
         <a href="#top" className="group flex items-center gap-3" onClick={close}>
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-gold/40 bg-gold/12 text-xs font-bold text-gold">
-            4K
+          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-gold/40 bg-gold/[0.12] text-gold">
+            <PenTool size={17} />
           </span>
           <span className="text-sm font-semibold uppercase tracking-[0.24em] text-white">
-            Drone Films
+            Caricatura
           </span>
         </a>
 
@@ -83,7 +83,7 @@ export default function Navigation() {
                 key={item.href}
                 href={item.href}
                 onClick={close}
-                className="rounded-2xl px-4 py-3 text-mist/80 transition hover:bg-white/8 hover:text-white"
+                className="rounded-2xl px-4 py-3 text-mist/80 transition hover:bg-white/[0.08] hover:text-white"
               >
                 {item.label}
               </a>

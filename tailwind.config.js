@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -12,7 +12,7 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["Manrope", "Inter", "ui-sans-serif", "system-ui", "sans-serif"]
+        display: ["Playfair Display", "Manrope", "ui-serif", "serif"]
       },
       boxShadow: {
         glow: "0 0 60px rgba(200, 169, 106, 0.18)"

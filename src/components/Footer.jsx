@@ -2,13 +2,14 @@ import { contact, socialLinks } from "../data/siteData.js";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-[#050505] px-5 py-10 md:px-8">
-      <div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
+    <footer className="relative overflow-hidden border-t border-white/10 bg-[#050505] px-5 py-12 md:px-8">
+      <div className="sketch-lines absolute inset-0 opacity-20" />
+      <div className="relative mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-white">Drone Films</p>
-          <p className="mt-3 text-sm text-mist/45">
-            Cinematic aerial filmmaking with FIMI X8 SE 4K.
+          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-white">
+            Caricatura ao vivo
           </p>
+          <p className="mt-3 text-sm text-mist/[0.45]">Cada rosto possui uma historia.</p>
         </div>
         <div className="flex flex-wrap gap-3">
           {socialLinks.slice(0, 3).map((link) => {
@@ -28,7 +29,7 @@ export default function Footer() {
           })}
         </div>
         <p className="text-sm text-mist/40">
-          © {new Date().getFullYear()} Drone Films. {contact.email}
+          © {new Date().getFullYear()} {contact.location}. {contact.email}
         </p>
       </div>
     </footer>
